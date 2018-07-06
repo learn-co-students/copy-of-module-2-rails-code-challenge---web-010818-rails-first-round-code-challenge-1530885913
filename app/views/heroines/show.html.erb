@@ -1,0 +1,13 @@
+<h1><%= @heroine.name %></h1>
+
+<h3>super name: <%= @heroine.super_name %></h3>
+
+<h3>power: <%= link_to @heroine.power.name, power_path(@heroine.power) %></h3>
+
+<%= link_to "Heroine Index", heroines_path %><br>
+
+<%= link_to "Edit Heroine", edit_heroine_path %>
+
+<%= form_tag @heronie, method:"DELETE" do %>
+    <%= submit_tag "delete" %>
+<% end %>
