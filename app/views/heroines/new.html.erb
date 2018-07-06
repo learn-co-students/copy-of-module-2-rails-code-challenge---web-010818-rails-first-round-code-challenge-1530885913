@@ -1,0 +1,16 @@
+<% if @heroine.errors.any? %>
+    <p style="color: red">There were some errors: </p>
+    <% @heroine.errors.full_messages.each do |message| %>
+        <%= message %>
+    <% end %>
+<% end %>
+
+<h1>Create new heroine</h1>
+<%= form_for @heroine do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :super_name %>
+    <%= f.text_field :super_name %>
+    <%= f.collection_select :power_id, Power.all, :id, :name %>
+    <%= f.submit %>
+<% end %>

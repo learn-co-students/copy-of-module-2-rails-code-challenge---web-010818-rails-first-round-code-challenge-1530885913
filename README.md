@@ -21,7 +21,7 @@ You've just been hired by 'Marvel Comics' - congratulations! The production staf
 Luckily, another developer has already started the job. We have a model for heroines and a model for powers. Once the database is seeded, visiting `/heroines` displays all of the heroines, and visiting `/powers` displays all of the powers. We just don't have a way to associate heroines with powers.
 
 We have several different powers and each can be bestowed upon **more than one heroine**. Each heroine can only have **one power**.
-
+ 
 ## Instructions / Deliverables
 
 Read through the instructions to get a sense of the scope of this code challenge, and then tackle them one by one.
