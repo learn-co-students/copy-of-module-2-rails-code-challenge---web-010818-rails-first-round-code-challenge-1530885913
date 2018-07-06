@@ -3,8 +3,10 @@
 <ul>
   <% @heroines.each do |heroine| %>
     <li>
-      <%= heroine.super_name %>
+      <%= link_to "#{heroine.name} aka #{heroine.super_name}", heroine %>
     </li>
     <br>
   <% end %>
 </ul>
+
+<%= link_to 'Create a new superhero!', new_heroine_path %>
